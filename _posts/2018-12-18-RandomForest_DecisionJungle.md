@@ -1,16 +1,7 @@
 ---
 layout: post
 title: Random Forest & Decision Jungle
-description: "Random Forest & Decision Jungle"
-headline: "Random Forest & Decision Jungle"
-categories: MACHINELEARNING
-tags: 
-  - Random Forest
-  - Decision Jungle
-comments: false
 mathjax: true
-featured: true
-published: true
 ---
 
 # 0. 앙상블, 그리고 배깅 (Ensemble & Bagging)
