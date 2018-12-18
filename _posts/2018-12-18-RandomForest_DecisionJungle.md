@@ -35,13 +35,17 @@ published: true
 
 랜덤 포레스트는 부트스트랩 샘플링과 변수 무작위 추출의 두 가지 방법으로 앙상블의 다양성을 확보합니다. 
 
-
-<p align="center"><img src="https://github.com/yscatwork/yscatwork.github.io/blob/master/images/2.png" width="500"></p>
+<figure align="center">
+	<img src="{{ site.baseurl }}/assets/img/2.png" width="40%">
+</figure> 
 
 
 랜덤 포레스트는 트리 pruning을 하지 않습니다. 따라서 훈련 데이터에 과적합할 수 있는 위험이 있습니다. 랜덤 포레스트의 Generalization Error 는 각 트리간의 모델 독립성 (p bar)이 낮을 수록, 그리고 개별 트리의 정확도가 (s^2) 높을 수록 낮아집니다. 
 
-<p align="center"><img src="https://github.com/yscatwork/yscatwork.github.io/blob/master/images/3.png" width="200"></p>
+<figure align="center">
+	<img src="{{ site.baseurl }}/assets/img/3.png" width="40%">
+</figure> 
+
 
 ## 1.1 변수별 중요도 (Variable Importance)
 
@@ -52,7 +56,11 @@ OOB 데이터를 분류기에 입력으로 넣어 inference를 할때, 만약 �
 값이 뒤바뀌어도 크게 상관이 없다, 즉 값이 뒤섞인 변수가 결정 트리에서 별로 중요하지 않다는 뜻입니다. 
 
 이런 논리로 OOB 데이터로부터 변수별 중요도를 계산 할수 있습니다.
-<p align="center"><img src="https://github.com/yscatwork/yscatwork.github.io/blob/master/images/4.png" width="500"></p>
+
+
+<figure align="center">
+	<img src="{{ site.baseurl }}/assets/img/4.png" width="40%">
+</figure> 
 
 ## 1.2 코드 예시
 참고 코드: https://github.com/llSourcell/random_forests
@@ -214,8 +222,7 @@ def randomforest(traindata, testdata, mx_depth, mn_size, sample_size, num_trees,
 	
 ```
 
-데이터 위치: [sonar.all-data.csv](https://github.com/yscatwork/yscatwork.github.io/blob/branch/sonar.all-data.csv)
-
+데이터 위치: [sonar.all-data.csv]("{{ site.baseurl }}/assets/sonar.all-data.csv")
 코드를 모두 실행하려면 아래의 코드 블락을 실행합니다.
 
 ```python
@@ -421,13 +428,18 @@ DAG에서는 아래의 그림에서 처럼, child node가 여러개의 부모로
 
 이러한 DAG를 만들기 위해서, rotation forest와는 달리 주기적으로 node들을 합치는 과정이 추가됩니다.
 
-<p align="center"><img src="https://github.com/yscatwork/yscatwork.github.io/blob/master/images/6.png" width="500"></p>
+
+<figure align="center">
+	<img src="{{ site.baseurl }}/assets/img/6.png" width="40%">
+</figure> 
 
 
 ## 2.1 구성
 Decision Jungle은 아래처럼 정리할 수 있습니다.
 
-<p align="center"><img src="https://github.com/yscatwork/yscatwork.github.io/blob/master/images/7.png" width="300"></p>
+<figure align="center">
+	<img src="{{ site.baseurl }}/assets/img/7.png" width="40%">
+</figure> 
 
 Np: 부모 노드
 
@@ -448,15 +460,16 @@ Sj({θi},{li},{ri}): 자식 노드에 도착하는 결과물 (= 부모 노드의
 ## 2.2 훈련
 
 Decision Jungle의 훈련시 목적함수는 아래와 같이 정의됩니다.
-
-<p align="center"><img src="https://github.com/yscatwork/yscatwork.github.io/blob/master/images/8.png" width="200"></p>
-
+<figure align="center">
+	<img src="{{ site.baseurl }}/assets/img/8.png" width="40%">
+</figure> 
 Split feature function과, 자식 assginment 둘을 joint로 최소화 하는 것이 훈련의 방향입니다.
 
 그러나 위의 목적식은 쉽게 풀기 어려우므로, 가장 그럴듯한 값으로 초기값 지정을 한 후에 L-search를 통해 최적값을 찾습니다.
 
-<p align="center"><img src="https://github.com/yscatwork/yscatwork.github.io/blob/master/images/9.png" width="500"></p>
-
+<figure align="center">
+	<img src="{{ site.baseurl }}/assets/img/9.png" width="40%">
+</figure> 
 
 L-search는 split optimization과 branch optimization step이 번갈아 이루어지는 과정입니다. 
 
