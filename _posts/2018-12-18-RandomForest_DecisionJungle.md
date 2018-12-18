@@ -424,7 +424,7 @@ DAG에서는 아래의 그림에서 처럼, child node가 여러개의 부모로
 Decision Jungle은 아래처럼 정리할 수 있습니다.
 
 <figure align="center">
-	<img src="https://yscatwork.github.io/assets/img/7.png" width="80%">
+	<img src="https://yscatwork.github.io/assets/img/7.png" width="40%">
 </figure> 
 
 Np: 부모 노드
@@ -447,7 +447,7 @@ Sj({θi},{li},{ri}): 자식 노드에 도착하는 결과물 (= 부모 노드의
 
 Decision Jungle의 훈련시 목적함수는 아래와 같이 정의됩니다.
 <figure align="center">
-	<img src="https://yscatwork.github.io/assets/img/8.png" width="40%">
+	<img src="https://yscatwork.github.io/assets/img/8.png" width="80%">
 </figure> 
 Split feature function과, 자식 assginment 둘을 joint로 최소화 하는 것이 훈련의 방향입니다.
 
