@@ -23,7 +23,6 @@ published: true
 
 예측기는 어떤 지도학습 알고리즘을 사용해서 만들어도 됩니다.
 
-<p align="center"><img src="https://github.com/yscatwork/yscatwork.github.io/blob/master/images/1.png" width="500"></p>
 
 # 1. 결정 트리와 랜덤 포레스트 (Random Forest):
 
