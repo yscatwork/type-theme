@@ -416,7 +416,7 @@ DAG에서는 아래의 그림에서 처럼, child node가 여러개의 부모로
 
 
 <figure align="center">
-	<img src="{{ site.baseurl }}/assets/img/6.png" width="40%">
+	<img src="https://yscatwork.github.io/assets/img/6.png" width="40%">
 </figure> 
 
 
@@ -424,7 +424,7 @@ DAG에서는 아래의 그림에서 처럼, child node가 여러개의 부모로
 Decision Jungle은 아래처럼 정리할 수 있습니다.
 
 <figure align="center">
-	<img src="https://yscatwork.github.io/assets/img/7.png" width="40%">
+	<img src="https://yscatwork.github.io/assets/img/7.png" width="80%">
 </figure> 
 
 Np: 부모 노드
