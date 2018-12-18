@@ -26,11 +26,6 @@ mathjax: true
 
 랜덤 포레스트는 부트스트랩 샘플링과 변수 무작위 추출의 두 가지 방법으로 앙상블의 다양성을 확보합니다. 
 
-<figure align="center">
-	<img src="https://yscatwork.github.io/assets/img/2.png" width="40%">
-</figure> 
-
-
 랜덤 포레스트는 트리 pruning을 하지 않습니다. 따라서 훈련 데이터에 과적합할 수 있는 위험이 있습니다. 랜덤 포레스트의 Generalization Error 는 각 트리간의 모델 독립성 (p bar)이 낮을 수록, 그리고 개별 트리의 정확도가 (s^2) 높을 수록 낮아집니다. 
 
 <figure align="center">
